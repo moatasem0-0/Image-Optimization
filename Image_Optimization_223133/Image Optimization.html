@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Image Optimization Tool</h1>
+
+    <form id="upload-form">
+        <label for="image-input">Upload an image:</label>
+        <input type="file" id="image-input" accept="image/*">
+        <p id="file-size-warning" style="display: none;">Image is larger than 2MB. Please optimize.</p>
+    </form>
+
+    <div id="optimization-options" style="display: none;">
+        <h2>Optimization Options</h2>
+        <div class="preview" id="preview-container"></div>
+        <button id="choose-optimized" disabled>Choose</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
